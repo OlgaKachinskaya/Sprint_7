@@ -2,7 +2,7 @@ import pytest
 from data import Url, DataForRegistration
 import generators
 import requests
-from urllib.parse import urlparse
+import allure
 
 @pytest.fixture
 def create_courier():
@@ -27,3 +27,13 @@ def generate_courier_data():
     login_courier = requests.post(f'{Url.main_url}{Url.courier_login}', json=login_courier_body)
     courier_id = login_courier.json().get("id", "")
     requests.delete(f'{Url.main_url}{Url.courier_delete}'.replace(":id", str(courier_id)))
+
+@pytest.fixture
+def cancel_order_after_test():
+    tracks = []
+    yield tracks
+
+    with allure.step('Отмена тестовых заказов (пост-условие)'):
+        for track in tracks:
+            cancel_url = f"{Url.main_url}{Url.order_cancel}?track={track}"
+            requests.put(cancel_url)

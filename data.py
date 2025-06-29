@@ -29,7 +29,7 @@ class DataForRegistration:
 class ResponseBody:
     courier_creation_success = {'ok': True}
     courier_name_already_exist = {'code':  409, 'message': 'Этот логин уже используется. Попробуйте другой.'}
-    courier_registration_not_enough_data = {'code': 400, 'message': 'Недостаточно данных для входа'}
+    courier_registration_not_enough_data = {'code': 400, 'message': 'Недостаточно данных для создания учетной записи'}
     courier_account_not_found = {'code': 404, 'message': 'Учетная запись не найдена'}
     courier_login_not_enough_data = {'code': 400, 'message': 'Недостаточно данных для входа'}
 
