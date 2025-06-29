@@ -1,0 +1,16 @@
+[
+  "test_get_order.py::TestOrdersList::TestOrdersList::test_successful_get_order_list",
+  "test_get_order.py::TestOrdersList::test_successful_get_order_list",
+  "test_login_courier.py::TestLoginCourier::test_courier_login_empty_login_error",
+  "test_login_courier.py::TestLoginCourier::test_courier_login_empty_password_error",
+  "test_login_courier.py::TestLoginCourier::test_successful_courier_login",
+  "test_login_courier.py::TestLoginCourier::test_unregistrated_courier_login",
+  "test_make_order.py::TestCreationOrder::test_create_order_with_diff_colour[scooter_color0]",
+  "test_make_order.py::TestCreationOrder::test_create_order_with_diff_colour[scooter_color1]",
+  "test_make_order.py::TestCreationOrder::test_create_order_with_diff_colour[scooter_color2]",
+  "test_make_order.py::TestCreationOrder::test_create_order_with_diff_colour[scooter_color3]",
+  "tests_create_courier.py::TestCreateNewCourier::test_creation_courier_double_error",
+  "tests_create_courier.py::TestCreateNewCourier::test_creation_courier_without_enoigh_field[data_setup0]",
+  "tests_create_courier.py::TestCreateNewCourier::test_creation_courier_without_enoigh_field[data_setup1]",
+  "tests_create_courier.py::TestCreateNewCourier::test_success_creation_courier"
+]
