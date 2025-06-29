@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Testing
+
+allure-results/
+*.png
+*.jpg
+*.log
+.pytest_cache/
+
+# Drivers
+geckodriver*
+chromedriver*
+msedgedriver*
+
+# Local
+.DS_Store
+Thumbs.db
+*.local.*
+config.local.ini
+
+# Allure
+allure-results/
+target/
